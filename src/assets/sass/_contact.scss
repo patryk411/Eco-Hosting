@@ -1,0 +1,120 @@
+.contact {
+    padding: 130px 0 100px;
+
+    &__map {
+        iframe {
+            width: 100%;
+            margin-bottom: 74px;
+        }
+    }
+
+    &__form {
+
+        &__boxes {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+        }
+
+        &--heading {
+            font-size: 2.7em;
+            color: $mainColor;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-family: $pop;
+        }
+
+        &__contact-form {
+            form {
+                    textarea {
+                        border: 1px solid #e5e6e9;
+                        border-radius: 0px;
+                        padding-left: 18px;
+                        font-size: 1.3em;
+                        background: transparent;
+                        min-height: 20vh;
+                        max-height: 30vh;
+                        margin-bottom: 30px;
+                    }
+
+                    textarea::placeholder {
+                        color: #495057;
+                    }
+
+                    .form-control {
+                        padding: 6px 12px 6px 18px;
+                        color: #495057;
+                        line-height: 1.5;
+                        font-size: 1.3em;
+                        height: 48px;
+                        margin-bottom: 30px;
+                    }
+
+                    .form-control::placeholder {
+                        color: rgb(191, 192, 194);
+                    }
+
+                    .form-btn {
+                        a {
+                            font-family: $pop;
+                            font-size: 1.4em;
+                            padding: 18px 44px;
+                            border: 1px solid #F067FF;
+                            color: #f067ff;
+                            text-transform: uppercase;
+                            letter-spacing: 3px;
+                            background: #fff;
+                            border-radius: 0;
+                            transition: all .5s;
+                        }
+
+                        a:hover {
+                            background: #f067ff;
+                            color: #fff;
+
+                        }
+                    }
+
+                }
+
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: start;
+            margin-top: 0px;
+
+            &__box {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: start;
+                margin-bottom: 25px;
+
+                i {
+                    font-size: 2.5em;
+                    color: #8a8a8a;
+                    margin-right: 20px;
+                }
+            }
+
+            &__text {
+                &--title {
+                    font-size: 1.6em;
+                    color: #2a2a2a;
+                    font-family: $pop;
+                }
+
+                &--text {
+                    font-size: 1.6em;
+                    font-family: $open;
+                    margin-bottom: 15px;
+                    color: #8f9195;
+                }
+            }
+        }
+    }
+}

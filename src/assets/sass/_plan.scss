@@ -1,0 +1,105 @@
+&__plan {
+    position: relative;
+    background-color: $mainColor;
+    z-index: 5;
+    
+        &__text {
+            margin-bottom: 90px;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            &__box {
+                font-family: $open;
+                padding: 70px 0px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 8px 26px rgba(67,40,124,0.08);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 15px 30px;
+                
+                &--top {
+                    text-align: center;
+                    margin-bottom: 25px;
+                    padding: 0 26px 26px;
+                    border-bottom: 1px solid #E7E6EB;
+                    width: 100%;
+                    img {
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                &--title {
+                    margin-bottom: 25px;
+                    font-size: 2.5em;
+                    color: #4c1e51;
+                    font-family: $pop;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+    
+                &--subtitle {
+                    font-size: 1.5em;
+                    font-family: $open;
+                    color: #3b4855;
+                }
+    
+                &--text {
+                    color: #838a9b;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+    
+                &--price {
+                    color: #4C1E51;
+                    font-size: 32px;
+                    font-weight: bold;
+                    font-family: $pop;
+                }
+    
+                &__list {
+                    color:#717081;
+                    list-style: none;
+                    text-align: center;
+    
+                    li {
+                        font-size: 1.6em;
+                        font-family: $open;
+                        margin-bottom: 23px;
+                        font-weight: 300;
+                    }
+                }
+            }
+    
+            &__box:hover {
+                .box-buttons {
+                    .main-btn,
+                    a {
+                        background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &__bg {
+            background-color: #fff;
+            height: 50vh;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            z-index: -10;
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+        }
+
+        &__packages {
+            padding-top: 150px;
+        }
+}

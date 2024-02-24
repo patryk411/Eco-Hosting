@@ -1,0 +1,202 @@
+&__faqs {
+    padding: 200px 0;
+    position: relative;
+    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0% 100%);    
+    background-color: $mainColor;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__questions {
+            &__box {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: start;
+                margin-bottom: 50px;
+
+                &--q {
+                    color: #fff;
+                    font-size: 2em;
+                    font-family: $open;
+                }
+
+                &--qH {
+                    color: $mainColor;
+                }
+
+                &__text {
+                    padding-left: 28px;
+
+                    &--title {
+                        font-size: 2em;
+                        font-family: $pop;
+                        margin-bottom: 21px;
+                        width: 100%;
+                    }
+
+                    &--text {
+                        font-size: 1.5em;
+                        font-family: $open;
+                        margin-bottom: 15px;
+                        color: rgba(255,255,255,0.6);
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+
+        &__testimonitals {
+            padding-top: 200px;
+
+            .carousel,
+            .slide {
+                position: relative;
+                background-color: #4C1E51;
+                padding: 70px 100px;
+                border-radius: 12px;
+
+                .carousel-indicators {
+                    display: none;
+                }
+                
+                .carousel-inner {
+                    .carousel-item {
+                        color: #fff;
+                        
+                        .carousel-caption {
+                            position: relative;
+                            left: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            p {
+                                font-size: 1.6em;
+                                color: #fff;
+                                margin-bottom: 37px;
+                                line-height: 1.5;
+                                font-family: $open;
+                                padding-top: 10px;
+                                font-weight: 600;
+                            }
+
+                            .carousel-author {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: start;
+                                justify-content: center;
+                                
+                                img {
+                                    margin-right: 20px;
+                                }
+
+                                .author-info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: start;
+                                    justify-content: start;
+                                    .author-name {
+                                        font-size: 1.6em;
+                                        font-family: $open;
+                                        color: #fff;
+                                        line-height: 1.5;
+                                        margin-bottom: 5px;
+                                        font-weight: 600;
+                                    }
+
+                                    .author-position {
+                                        color: #a5a7c5;
+                                        font-size: 1.4em;
+                                        line-height: 1.4;
+                                        font-weight: 400;
+                                        font-family: $open;
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .active {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .carousel-control-prev {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);                    
+                    top: 50%;
+                    border-radius: 50%;
+                    left: 0%;
+                    transform: translate(-50%, -50%);
+
+                }
+                
+                .carousel-control-next {
+                    position: absolute;
+                    background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);                    
+                    top: 50%;
+                    border-radius: 50%;
+                    right: 0%;
+                    transform: translate(50%, -50%);
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        &__testimonitalsH {
+            display: none;
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        a {
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #fff;
+            font-family: $pop;
+            font-size: 1.5em;
+            padding: 27px 44px;
+            background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+            letter-spacing: 1px;
+            position: relative;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+    }
+}
+
+&__help {
+    background-color: #fff;
+}

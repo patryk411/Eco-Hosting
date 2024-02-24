@@ -1,0 +1,266 @@
+@media(min-width: 150px) {
+    .navbar {
+        padding: 20px 24px;
+
+        .navbar-toggler,
+        .collapsed {
+            padding: 15px;
+            border: transparent;
+            outline: none;
+            
+            .fa-bars {
+                font-size: 2em;
+                color: #fff;
+            }
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding: 20px 0;
+
+                .nav-link {
+                    padding: 10px 2px;
+                }
+
+                .nav-button {
+                    padding: 22px 44px;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    
+    .header {
+        padding: 50px 24px 160px;
+        
+        &--heading {
+            font-size: 2.9em;
+        }
+    
+        &--text {
+            width: 90%;
+            margin-bottom: 54px;
+        }
+    }
+
+    .header-subpage {
+        padding: 100px 0;
+    }
+    
+    .search {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+        }
+    
+        &__text {
+            padding: 0 20px;
+            &--heading {
+                font-size: 2.6em;
+                color: #fff;
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-family: $pop;
+            }
+    
+            &--text {
+                font-size: 1.4em;
+                color: #A5A7C5;
+                font-family: $open;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            padding: 0 24px;
+            form {
+                position: relative;
+
+                .form-control {
+                    font-size: 1.4em;
+                    padding: 9px 33px 9px 76px;
+                }
+            }
+        }
+
+        &__domains {
+            text-align: center;
+            
+            &--domain {
+                .domain-com {
+                    color: #ff7474;
+                    font-size: 1.6em;
+                    margin-right: 11px;
+                }
+    
+                .domain-price {
+                    color: #fff;
+                    font-size: 1.4em;
+                }
+    
+                .domain-net {
+                    color: #ffdd74;
+                    font-size: 1.6em;
+                    margin-right: 11px;
+                }
+    
+                .domain-rog {
+                    color: #74ff9f;
+                    font-size: 1.6em;
+                    margin-right: 11px;
+                }
+    
+                .domain-me {
+                    color: #748bff;
+                    font-size: 1.6em;
+                    margin-right: 11px;
+                }
+            }
+        }
+    }
+    
+    .main {
+        &__features {
+            padding: 65px 24px 70px;
+    
+            &__text {
+                margin-bottom: 50px;
+            }
+    
+            &__content {
+                &__box {
+                    margin-bottom: 30px;
+                    &--title {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    
+        &__plan {
+            padding: 0 24px;
+
+            &__text {
+                margin-bottom: 30px;
+            }
+
+            &__content {
+                &__box {
+                    margin: 0 0px 30px;
+                }
+            }
+        }
+    
+
+        &__about {
+            padding: 60px 24px 70px;
+    
+            &__content {
+                &__box {
+                    margin-bottom: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+    
+                &__box:last-child {
+                    margin-bottom: 0;
+                }
+            }
+    
+            &__text {
+                &--heading {
+                    font-size: 2.4em;
+                }
+
+                &--text {
+                    width: 100%;
+                }
+            }
+    
+            .even-img {
+                margin-top: 50px;
+            }
+    
+            &__img {
+                margin-bottom: 50px;
+            }
+        }
+
+    
+        &__faqs {
+            padding: 100px 24px 0;
+            clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0% 100%);   
+            
+            &__text {
+                margin-bottom: 50px;
+            }
+
+            &__content {
+                &__questions {
+                    &__box {
+                        &__text {
+                            &--title {
+                                width: 95%;
+                            }
+                            &--titleH {
+                                color: $mainColor;
+                            }
+                            &--textH {
+                                color: #707070;
+                            }
+                        }
+                    }
+                }
+    
+                &__testimonitals {
+                    padding: 80px 0 80px;
+    
+                    .carousel,
+                    .slide {
+                        position: relative;
+                        background-color: #4C1E51;
+                        padding: 60px 30px;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+
+        &__help {
+            padding: 80px 24px;
+        }
+    }
+
+    .blogsubpage {
+        padding: 70px 24px 40px;
+    }
+
+    .contact {
+        padding: 70px 24px 20px;
+        &__form {
+            &__boxes {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__info {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .signup {
+        height: 90vh;
+    }
+    
+    footer {
+        padding: 80px 24px 20px;
+    }
+}

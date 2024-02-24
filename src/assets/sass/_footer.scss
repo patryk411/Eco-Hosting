@@ -1,0 +1,158 @@
+footer {
+    position: relative;
+    background-color: #3a163f;
+    padding: 160px 0 20px;
+    z-index: 1;
+    overflow: hidden;
+    .content {
+
+        &__main {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            &__box {
+                margin-bottom: 50px;
+
+                &--text {
+                    font-size: 1.6em;
+                    font-family: $open;
+                    margin-bottom: 15px;
+                    color: #c2c5db;
+                }
+
+                &__btns {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    margin-top: 40px;
+                    
+                    &--input {
+                        padding: 10px 20px;
+                        height: 43px;
+                        border: 1px solid #695cae;
+                        border-radius: 14px;
+                        font-size: 1.6em;
+                        font-family: $open;
+                        color: #fff;
+                        text-align: center;
+                        background: transparent;
+                        width: 100%;
+                    }
+                    
+                    &--input::placeholder {
+                        color: #c2c5db;
+                    }
+                    
+                    &__subscribe {
+                        width: 100%;
+                        
+                        &--subscribe {
+                            font-size: 1.6em;
+                            font-family: $open;
+                            display: block;
+                            margin-top: 24px;
+                            padding: 13px 22px;
+                            background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+                            border-radius: 10px;
+                            color: #fff;
+                            border: 0;
+                            font-weight: 500;
+                        }
+                    }
+
+                }
+
+                &__socials {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: start;
+                    margin-top: 50px;
+
+                    &--box, a {
+                        text-decoration: none;
+                        margin-right: 8px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        font-size: 1.4em;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+
+                &--heading {
+                    font-size: 2.2em;
+                    color: #fff;
+                    font-family: $pop;
+                    margin-bottom: 29px;
+                    font-weight: 500;
+                }
+
+                &__list {
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: 0;
+
+                    &--item {
+                        text-decoration: none;
+                        margin-bottom: 15px;
+                        font-family: $open;
+                        font-size: 1.6em;
+                        
+                        a {
+                            color: #c2c5db;
+                            text-decoration: none;
+                            transition: all .5s;
+                        }
+
+                        a:hover {
+                            color: #f067ff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            &__footer-logo {
+                margin-bottom: 25px;
+
+            }
+        }
+
+        &__btm {
+            padding-top: 33px;
+
+            &--text {
+                font-size: 1.5em;
+                font-family: $open;
+                color: #c2c5db;
+                text-align: center;
+                line-height: 2;
+                margin-bottom: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        bottom: -80px;
+        right: -50px;
+        width: 400px;
+        height: 400px;
+        background-color: #441e56;
+        border-top-left-radius: 15%;
+        border-bottom-left-radius: 15%;
+        transform:  rotate(17deg);
+        z-index: -10;
+    }
+}

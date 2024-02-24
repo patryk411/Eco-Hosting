@@ -1,0 +1,23 @@
+.header-subpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainColor;
+    padding: 150px 0 200px;
+
+    &--h1 {
+        font-size: 4.4em;
+        font-family: $pop;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 0;
+    }
+
+    .shape-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

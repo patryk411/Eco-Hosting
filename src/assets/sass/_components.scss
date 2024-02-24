@@ -1,0 +1,103 @@
+.section-heading {
+    font-size: 4.4em;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    font-family: $pop;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.section-heading-subpage {
+    font-size: 4.4em;
+    font-family: $pop;
+    margin-bottom: 22px;
+    color: $mainColor;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 1.6em;
+    font-family: $open;
+    margin-bottom: 15px;
+    color: #7a8290;
+    text-align: center;
+}
+
+.section-text-subpage {
+    color: #a5a7c5;
+    font-size: 1.8em;
+}
+
+.section-text-help {
+    font-size: 1.6em;
+    font-family: $open;
+    color: #6e7697;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.box-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .main-btn,a {
+        padding: 10px 64px;
+        background: none;
+        border: 1px solid #f067ff;
+        color: #f067ff;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        font-family: $open;text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        transition: all .5s;
+    }
+}
+
+
+@media(min-width: 150px) {
+    .section-heading {
+        font-size: 2.4em;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #fff;
+        font-family: $pop;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+
+    .section-heading-subpage {
+        font-size: 2.4em;
+        font-family: $pop;
+        margin-bottom: 22px;
+        color: $mainColor;
+        font-weight: 600;
+        text-align: left;
+    }
+}
+
+@media(min-width: 768px) {
+    .section-heading {
+        font-size: 4.4em;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #fff;
+        font-family: $pop;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .section-heading-subpage {
+        font-size: 4.4em;
+        font-family: $pop;
+        margin-bottom: 22px;
+        color: $mainColor;
+        font-weight: 600;
+        text-align: center;
+    }
+}

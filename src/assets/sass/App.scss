@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './fonts';
+@import './colors';
+@import './components';
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    color: #fff;
+    font-family: $pop;
+}
+
+@import './nav';
+@import './header';
+@import './headerSub';
+@import './search';
+@import './blog';
+@import './contact';
+@import './signup';
+@import './signin';
+
+.main {
+    @import './features';
+    @import './plan';
+    @import './about';
+    @import './faqs';
+}
+
+@import './footer';
+@import './scrollTglr';
+
+@import './media576';
+@import './media768';
+@import './media1400';
